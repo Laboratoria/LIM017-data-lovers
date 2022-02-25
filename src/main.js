@@ -5,6 +5,7 @@ import data from './data/pokemon/pokemon.js';
 
 console.log(example, data);
 
+
 const renderData = () =>{
     var data ="";
     console.log(data);
