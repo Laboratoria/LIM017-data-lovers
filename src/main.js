@@ -137,4 +137,5 @@ imgDiv.addEventListener('click',function (){
 
 
 /*function computeStats (){
+
 }*/
