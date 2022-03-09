@@ -1,4 +1,4 @@
-//import { todo lo que necesite } from './data.js';
+import {todosLaMovies} from './data.js';
 import data from './data/ghibli/ghibli.js';
 
 let bttnMoreInf = document.getElementById("bttnMoreInf");
@@ -14,6 +14,6 @@ document.getElementById("tarjetInfo").className = "invisible";
 })
 // import data from './data/rickandmorty/rickandmorty.js';
 
-console.log(dataMovies, data);
+console.log(todosLaMovies, data);
 
 
