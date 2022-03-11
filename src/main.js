@@ -1,7 +1,7 @@
 import {dataMovies} from './data.js';
 import data from './data/ghibli/ghibli.js';
 console.log (data);
-console.log (dataMovies);
+
 
 let bttnMoreInf = document.getElementById("bttnMoreInf");
 bttnMoreInf.addEventListener("click", function() {
