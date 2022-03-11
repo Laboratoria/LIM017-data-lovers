@@ -29,6 +29,7 @@ myArray.forEach((myArray) => {
     document.getElementById("datitos").innerHTML += '<li>'+ myArray.title+' '+ myArray.description +'</li>';
   })
   console.log(myArray);
+  console.log(alert "Hello");
 
 
 
