@@ -1,4 +1,4 @@
-import {todosLaMovies} from './data.js';
+/*import {dataMovies} from './data.js';*/
 import data from './data/ghibli/ghibli.js';
 
 let bttnMoreInf = document.getElementById("bttnMoreInf");
@@ -12,8 +12,19 @@ backIntro.addEventListener("click", function() {
 document.getElementById("inf").className = "visible"; 
 document.getElementById("tarjetInfo").className = "invisible";
 })
+
 // import data from './data/rickandmorty/rickandmorty.js';
 
-console.log(todosLaMovies, data);
+let myArray = data.films;
+for (let index = 0; index < myArray.length; index++) {
+    console.log(myArray[index].title)
+  }
 
+
+  
+
+//'<li>'+index.people+' '+index.people+'</li>'
+/*console.log(data);
+console.log(dataMovies)
+*/
 
