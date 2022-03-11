@@ -5,8 +5,21 @@ header{
     border-radius: 15px;
 }
 body{
-    background-image:url(img/fondo.jpg);
+    background-image:url(img/fondoToto.jpg);
+    background-size: cover;
 }
+.info{
+    font-family:"Garamond";
+    font-size:26px;
+    width: 60%;
+    background:rgba(238, 215, 9, 0.459) ;
+    border-radius: 20px;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    margin: -25px 0 0 -25px;
+}
+
 #bttnMoreInf, #backIntro{
     background-color: #cca872;
     border: none;
@@ -16,6 +29,7 @@ body{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-family:" EB Garamond";
     margin: 4px 2px;
     cursor: pointer;
 }
@@ -23,5 +37,14 @@ body{
     display:initial;
     }
 .invisible{
-      display: none;
+    display: none;
     }
+footer{
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    font: black;
+    font-family: "EB Garamond";
+    font-size: 20px;
+    font-weight: 200;
+}
