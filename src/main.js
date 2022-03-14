@@ -3,33 +3,42 @@ import data from './data/ghibli/ghibli.js';
 console.log (data);
 console.log(dataMovies);
 
+
 let bttnMoreInf = document.getElementById("bttnMoreInf");
-bttnMoreInf.addEventListener("click", function() {
-document.getElementById("tarjetInfo").className = "visible"; 
-document.getElementById("inf").className = "invisible";
+bttnMoreInf.addEventListener("click",()=>{
+  const pageOne=document.getElementById("pageOne");
+  pageOne.style.display="none";
+  const pageTwo=document.getElementById("pageTwo");
+pageTwo.style.display="";
 })
 
+
 let backIntro = document.getElementById("backIntro");
-backIntro.addEventListener("click", function() {
-document.getElementById("inf").className = "visible"; 
-document.getElementById("tarjetInfo").className = "invisible";
+backIntro.addEventListener("click",()=>{
+  const pageOne=document.getElementById("pageOne");
+  pageOne.style.display="";
+  const pageTwo=document.getElementById("pageTwo");
+pageTwo.style.display="none";
 })
 
 // import data from './data/rickandmorty/rickandmorty.js';
 
 let myArray = data.films;
-/* let datitos = myArray.map(function callback(bar,){
-    return '<li>'+bar.films+' '+bar.films+'</li>'
-  }) */
-/* for (let index=0; index<myArray.length; index++){
-document.getElementById("datitos").innerHTML = myArray[index].title}
-if(index=[0]) */
+//let myList = "";
 
-myArray.forEach((myArray) => {
-    document.getElementById("datitos").innerHTML += '<li>'+ ("titulo" +' '+ myArray.title)+' '+ myArray.description +'</li>';
+myArray.forEach((displayAllData) => {
+  document.getElementById("filmsInfo").innerHTML += `
+  <div class="card">
+  <div class="filmsTitle"> Title: ${displayAllData.title}</div>
+  <br>
+  <div class="filmsDescription"> Description: ${displayAllData.description}</div>
+  <img class="poster" src="${displayAllData.poster}">
+   <br>
+  </div>
+  `
+    })
 
-  })
-  console.log(myArray);
+
 
 
 

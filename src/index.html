@@ -13,20 +13,38 @@
   <body>
     <header><img src="img/header1.gif" width="100%" alt="totorolindo"></header>
     <div class="container">
-      <div  id="inf" class="info">
-        <h1>Studio Ghibli</h1>
-        <p>Studio Ghibli es un estudio de animación japonés, conocido por sus largometrajes animados como Mi vecino Totoro, El viaje de Chihiro o El castillo ambulante, entre otros grandes éxitos.<br>
-           Las animaciones tienen gran acogida a nivel mundial y algunas han recibido varias nominaciones y premios. De todo este fandom hay un grupo que desea poder interactuar y ver la información de las animaciones y sus personajes.</p>
-           </div>
-           <button id="bttnMoreInf">Informacion de Peliculas </button>
-           <div id="tarjetInfo" class="invisible">
-      <h1>AQUI VAN TODAS LAS TARJETAS</h1>
-      <div id="datitos"></div>
-      <img src="" id="pictures">
-      <button id="backIntro" class="botoncito">Volver al inicio </button>
+      <div class="containerTwo"></div>
+      <div  id="pageOne" class="info">
+        <table>
+        <tr>
+          <td>
+          <h1>La magia de Studio Ghibli</h1>
+        <p>Es un estudio cinematográfico de animación japonesa conocido por sus largometrajes y grandes éxitos . Las animaciones tienen gran acogida a nivel mundial y algunas han recibido varias nominaciones y premios.Fundado en 1985, dirigido por el galardonado director Hayao Miyazaki, y hasta 2018 estuvo dirigido por Miyazaki junto a su amigo y mentor, Isao Takahata, fallecido en ese año. </p>
+        <p>Hayao Miyazaki es director de cine de animación, productor, animador y co-fundador de Studio Ghibli, es el genio detrás de “Mi vecino Totoro” o “El castillo ambulante” entre las más conocidas.Sus historias son fantásticas llenas de sentimientos y experiencias, sin embargo y a pesar de lo que pareciera, él mismo ha definido que sus películas no son meramente infantiles, pues están diseñadas para tocar el corazón de incluso los más grandes de la familia.</p>
+        <p>Seis de las películas de Studio Ghibli se encuentran entre las 10 películas de anime más taquilleras realizadas en Japón. Muchos de sus trabajos han ganado el premio Animage Anime Grand Prix, y cuatro han ganado el Premio de la Academia Japonesa de Animación del Año. Cinco de las películas de Studio Ghibli han recibido nominaciones al Óscar. El Viaje de Chihiro ganó el Oso de Oro en 2002 y el Premio de la Academia a la Mejor Película de Animación en 2003.
+        <p>Debido a la fama de los estudios se abrió en las afueras de Tokio el Museo Ghibli.</p>
+      </td>
+      <td>
+        <img class="img-responsive" src="img/mundoHayaoOk.jpg" alt="HayaoMiyasaki" width="550px">
+      </td>
+      </tr>
+      </table>
+      <div class="btnFilmsInfo">
+        <button id="bttnMoreInf">Información de Películas </button>
+      </div>
+     </div>
+      <div id="pageTwo" style="display:none" class="pageTwo">
+      <h1>Mas sobre las peliculas</h1>
+      <div id="filmsInfo" class="filmsIntro"></div>
+      <br>
+      <div class="btnIntro">
+        <button id="backIntro">Volver al inicio </button>
+      </div>
     </div>
-    <div id="root"></div>
+  </div>
+</div>
     <script src="main.js" type="module"></script>
+    <br><br>
     <footer>© Todos lo derechos reservados 2022 </footer>
   </body>
 </html>
