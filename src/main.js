@@ -1,6 +1,7 @@
 import {dataMovies} from './data.js';
 import data from './data/ghibli/ghibli.js';
 console.log (data);
+console.log(dataMovies);
 
 
 let bttnMoreInf = document.getElementById("bttnMoreInf");
@@ -20,7 +21,7 @@ backIntro.addEventListener("click",()=>{
 pageTwo.style.display="none";
 })
 
-console.log(dataMovies, data);
+// import data from './data/rickandmorty/rickandmorty.js';
 
 let myArray = data.films;
 //let myList = "";
@@ -44,4 +45,10 @@ myArray.forEach((displayAllData) => {
 
 
 
+  
+
+//'<li>'+index.people+' '+index.people+'</li>'
+/*console.log(data);
+console.log(dataMovies)
+*/
 
