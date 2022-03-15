@@ -27,7 +27,7 @@ let myArray = data.films;
 
 myArray.forEach((displayAllData) => {
   document.getElementById("filmsInfo").innerHTML += `
-  <div class="card">
+  <div class="cards">
   <div class="filmsTitle"> Title: ${displayAllData.title}</div>
   <br>
   <div class="filmsDescription"> Description: ${displayAllData.description}</div>
