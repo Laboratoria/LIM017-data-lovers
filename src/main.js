@@ -27,12 +27,11 @@ pageTwo.style.display="none";
 let myArray = data.films;
 
 //let myList = "";
-let yearOrden = document.getElementById("yearOrden");
-yearOrden.addEventListener("click",()=>{
-const moviesOrden= sortMovies(data.films);
-console.log(moviesOrden);
-})
-
+// let yearOrden = document.getElementById("yearOrden");
+// yearOrden.addEventListener("click",()=>{
+// const moviesOrden= sortMovies(data.films);
+// console.log(moviesOrden);
+// })
 
 myArray.forEach((displayAllData) => {
   document.getElementById("filmsInfo").innerHTML += `
@@ -55,3 +54,8 @@ myArray.forEach((displayAllData) => {
    </div> 
   `
     })
+
+    
+// let sortedInfo= document.getElementById("selectSortAZ");
+// sortedInfo.addEventListener("change",)
+
